@@ -1,0 +1,25 @@
+Library DB Design
+------------------
+
+library
+{
+	ISBN: []	
+}
+
+
+books
+{
+	ISBN:
+	author:
+	KeyWords:
+	students: {
+		Name:
+		Email: 
+		BorrowDate:
+		ReturnDate:
+	}
+}
+
+
+db.book.createIndex({keywords:1})
+db.book.createIndex({students.ReturnDate:1, ISBN:1})
